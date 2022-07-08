@@ -1,0 +1,13 @@
+{"type":"record",
+  "name":"TweepAggregate",
+  "namespace":"io.confluent.bootcamp",
+  "fields": [
+    {"name": "userId", "type": "long" },
+    {"name": "shouldBeBlocked", "type": "boolean" },
+    {"name": "lastTweetsTime", "type": { "type":  "array", "items": "long", "default": [] }},
+    {"name": "numberOfTweet", "type": "long" },
+    {"name": "numberOfSentimentScore", "type": "double" },
+    {"name": "didChange", "type": "boolean", "default": false },
+    {"name": "time", "type": {"type": "long", "logicalType": "timestamp-millis" }}
+  ]
+}
